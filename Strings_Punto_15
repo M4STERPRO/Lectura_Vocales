@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    char caracteres[20];
+    int j, a=0, e=0, i=0, o=0, u=0;
+    
+    printf("Hola! Escriba 20 caracteres cualquiera" "\n");
+    scanf("%s", caracteres);
+    for (j=0; j<20; j++){
+        if ((caracteres[j]== 'a') || (caracteres[j]== 'A')) a++;
+        if ((caracteres[j]== 'e') || (caracteres[j]== 'E')) e++;
+        if ((caracteres[j]== 'i') || (caracteres[j]== 'I')) i++;
+        if ((caracteres[j]== 'o') || (caracteres[j]== 'O')) o++;
+        if ((caracteres[j]== 'u') || (caracteres[j]== 'U')) u++;
+    }
+    printf("La cadena de caracteres tiene %d A, %d E, %d I, %d O, %d U", a, e, i, o, u);
+    return 0;
+}
